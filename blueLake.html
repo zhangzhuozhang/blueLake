@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>blueLake</title>
+    <link rel="stylesheet" href="./css/blueLake.css">
+    <script src="https://cdn.bootcss.com/echarts/3.7.1/echarts.min.js"></script>
+</head>
+<body>
+   <div class="container">
+<!--       顶部-->
+       <div class="header">
+           <div class="logo">
+               <img src="./images/logo.png">
+           </div>
+       </div>
+<!--       内容-->
+       <div class="content">
+           <!--           左边-->
+           <div class="left">
+               <div class="echarts">
+                   <p class="item">各单位当月累计访问统计</p>
+                   <div id="sortVisits" class="table" style="width:365px;height:100%"></div>
+               </div>
+               <div class="echarts">
+                   <p class="item">当月访问量</p>
+                   <div id="mounthVisits" class="table" style="width:365px;height:100%"></div>
+               </div>
+               <div class="echarts">
+                   <p class="item">电网类应用</p>
+                   <div id="app" class="table" style="width:365px;height:100%"></div>
+               </div>
+           </div>
+
+           <!--           右边-->
+           <div class="right">
+               <div class="echarts">
+                   <p class="item">用户活跃度分布趋势</p>
+                   <!--                   <div id="sortVisits" class="table" style="width:365px;height:100%"></div>-->
+               </div>
+               <div class="echarts">
+                   <p class="item">当日整点访问量分析</p>
+                   <!--                   <div id="mounthVisits" class="table" style="width:365px;height:100%"></div>-->
+               </div>
+               <div class="echarts">
+                   <p class="item">应用访问量周统计</p>
+                   <!--                   <div id="app" class="table" style="width:365px;height:100%"></div>-->
+               </div>
+           </div>
+<!--           中间-->
+           <div class="center">
+               <img src="./images/content.jpg" alt="">
+           </div>
+       </div>
+   </div>
+   <script src="./js/blueLake.js"></script>
+</body>
+</html>
